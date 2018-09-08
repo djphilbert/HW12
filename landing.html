@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+  <!-- Some Boilerplate info for the page -->
+  <meta charset="UTF-8">
+  <!-- the title -->
+  <title>Landing</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- now we reference our own CSS stylesheet for additional changes -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+
+
+  <nav class="navbar navbar-default"> <!-- This is the navbar at the top -->
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">Latitude</a>
+      </div>
+
+      
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Posts<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li><a target="_blank" href="comparisons.html">Comparison</a></li>
+          <li><a href="#">Data</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+
+
+
+
+
+<div class="row">
+  <!--First Column in this Row-->
+  <div class="col-xs-12 col-sm-12 col-md-8">
+    <div class="box">
+      <h2>Summary: Latitude vs. X</h2>
+      <hr>
+      <article class="row col-xs-4 col-sm-4 col-md-4">
+        <a target="_blank" href="Resources/images/Fig1.png">
+          <img class ="viz" src="Resources/images/Fig1.png" alt="Cloudy Map">
+        </a>  
+      </article>
+      <h3>The purpose of this project was to analyze how weather changes as one gets closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. 
+      </h3>
+      <h3>After assembling the dataset, we used Matpotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudieness, windspeed, and humidity. This site provides the source data and vizualizations created as part of the analysis, as well as explainations and descriptions of any trends and correlations witnessed. 
+      </h3>
+    </div>
+  </div>
+
+  <!--Second Column in this Row-->
+  <div class="col-xs-12 col-sm-12 col-md-4">
+    <div class="box">
+      <h2 class ="viz">Visualizations</h2>
+      <hr>
+
+        <article class="row col-xs-3 col-sm-3 col-md-6">
+          <a target="_blank" href="Resources/images/Fig1.png">
+            <img class ="viz" src="Resources/images/Fig1.png" alt="Cloudy Map">
+          </a>  
+        </article>
+          
+        <article class="row col-xs-3 col-sm-3 col-md-6">
+          <a target="_blank" href="Resources/images/Fig2.png">
+            <img class ="viz" src="Resources/images/Fig2.png" alt="Humidity Map">
+          </a> 
+        </article>
+
+
+        <article class="row col-xs-3 col-sm-3 col-md-6">
+          <a target="_blank" href="Resources/images/Fig3.png">
+            <img class ="viz" src="Resources/images/Fig3.png" alt="Tempurature Map">
+          </a>
+        </article>
+
+        <!-- an example using figure/ficaption -->
+        <article class="row col-xs-3 col-sm-3 col-md-6">
+          <a target="_blank" href="Resources/images/Fig4.png">
+            <img class ="viz" src="Resources/images/Fig4.png" alt="Wind Map">
+          </a>
+        </article>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  <!-- ###1    
+    this is some code from one of our activities that originally displays all the displays all the  -->
+  
+
+
+
+  <!-- ###2 
+    This section of code is demonstrates how to columns that change based on screen width -->
+  <div class="container">
+    <!--Normally these medium columns go full wide on small screen sizes-->
+    <div class="row">
+
+      <div class="col-md-3">
+        <div class="box skyblue">col-md-3</div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="box skyblue">col-md-3</div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="box skyblue">col-md-3</div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="box skyblue">col-md-3</div>
+      </div>
+
+    </div>
+
+    <!--These col-md-3 columns go half wide when on a small screen-->
+    <div class="row">
+
+      <div class="col-sm-6 col-md-3">
+        <div class="box purple">col-sm-6 col-md-3</div>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <div class="box purple">col-sm-6 col-md-3</div>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <div class="box purple">col-sm-6 col-md-3</div>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <div class="box purple">col-sm-6 col-md-3</div>
+      </div>
+
+    </div>
+    <!--These are full wide on a medium screen, half wide on a small screen, 1/4 wide on an extra small screen-->
+    <div class="row">
+
+      <div class="col-xs-3 col-sm-6 col-md-12">
+        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
+      </div>
+
+      <div class="col-xs-3 col-sm-6 col-md-12">
+        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
+      </div>
+
+      <div class="col-xs-3 col-sm-6 col-md-12">
+        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
+      </div>
+
+      <div class="col-xs-3 col-sm-6 col-md-12">
+        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
+      </div>
+
+    </div>
+    <!-- End ###2  -->
+  </div>
+
+</body>
+
+
+
+
+
+
+
+</body>
+</html>

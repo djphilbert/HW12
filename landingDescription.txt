@@ -1,0 +1,9 @@
+The purpose of this project was to analyze how weather changes as one gets closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. 
+
+After assembling the dataset, we used Matpotlib to plot various aspects of the weather vs. latituse. Factors we looked at included: temperature, cloudieness, windspeed, and humidity. This site provides the source data and vizualizations created as part of the analysis, as well as explainations and descriptions of any trends and correlations witnessed. 
+
+Click on any plot to get an in-depth analysis. 
+
+The following table includes all of the data used for plotting during this project. 
+
+As expected, the weather becomes significantly warmer as one approaches the equator(0 Deg. Latitude). More interestingly, however, it is a fact that the southern hemisphere tends to be warmer than the northern hemisphere this time of year. This may be due to the the current eason at the time of data collection. 
